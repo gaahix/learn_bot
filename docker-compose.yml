@@ -1,0 +1,10 @@
+services:
+  app:
+    container_name: bot
+    build: ./
+    volumes:
+      - .:/bot
+    command: bash -c 'python main.py'
+
+volumes:
+  postgres_data:
